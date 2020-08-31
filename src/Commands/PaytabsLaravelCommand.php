@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\Skeleton\Commands;
+namespace Thecrazybob\PaytabsLaravel\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class PaytabsLaravelCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'paytabs-laravel';
 
     public $description = 'My command';
 
