@@ -1,17 +1,17 @@
 {
-    "name": "spatie/paytabs-laravel",
+    "name": "thecrazybob/paytabs-laravel",
     "description": "PayTabs Gateway for Laravel",
     "keywords": [
-        "spatie",
+        "thecrazybob",
         "paytabs-laravel"
     ],
-    "homepage": "https://github.com/spatie/paytabs-laravel",
+    "homepage": "https://github.com/thecrazybob/paytabs-laravel",
     "license": "MIT",
     "authors": [
         {
             "name": "Mohammed Sohail",
             "email": "hey@thecrazybob.com",
-            "homepage": "https://spatie.be",
+            "homepage": "https://thecrazybob.com",
             "role": "Developer"
         }
     ],
