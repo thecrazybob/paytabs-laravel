@@ -1,16 +1,16 @@
 {
-    "name": "spatie/:package_name",
-    "description": ":package_description",
+    "name": "spatie/paytabs-laravel",
+    "description": "PayTabs Gateway for Laravel",
     "keywords": [
         "spatie",
-        ":package_name"
+        "paytabs-laravel"
     ],
-    "homepage": "https://github.com/spatie/:package_name",
+    "homepage": "https://github.com/spatie/paytabs-laravel",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Mohammed Sohail",
+            "email": "hey@thecrazybob.com",
             "homepage": "https://spatie.be",
             "role": "Developer"
         }
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src"
+            "Thecrazybob\\PaytabsLaravel\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Thecrazybob\\PaytabsLaravel\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -47,10 +47,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Thecrazybob\\PaytabsLaravel\\PaytabsLaravelServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "PaytabsLaravel": "Thecrazybob\\PaytabsLaravel\\PaytabsLaravelFacade"
             }
         }
     },
