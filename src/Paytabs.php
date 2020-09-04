@@ -1,10 +1,10 @@
 <?php
 
-namespace Thecrazybob\PaytabsLaravel;
+namespace Thecrazybob\Paytabs;
 
-class PaytabsLaravel
+class Paytabs
 {
-    public function createPayment($order_details, $customer_details)
+    public function createPayment(array $order_details, array $customer_details)
     {
         // Gateway Configuration Parameters
         $merchantId = config('paytabs-laravel.merchant_id');

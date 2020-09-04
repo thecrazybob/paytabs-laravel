@@ -1,9 +1,9 @@
 <?php
 
-namespace Thecrazybob\PaytabsLaravel\Tests;
+namespace Thecrazybob\Paytabs\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use Thecrazybob\PaytabsLaravel\PaytabsLaravelServiceProvider;
+use Thecrazybob\Paytabs\PaytabsServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -11,13 +11,13 @@ class TestCase extends Orchestra
     {
         parent::setUp();
 
-        $this->withFactories(__DIR__.'/database/factories');
+        $this->withFactories(__DIR__ . '/database/factories');
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            PaytabsLaravelServiceProvider::class,
+            PaytabsServiceProvider::class,
         ];
     }
 

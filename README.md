@@ -4,7 +4,6 @@
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/thecrazybob/paytabs-laravel/run-tests?label=tests)](https://github.com/thecrazybob/paytabs-laravel/actions?query=workflow%3Arun-tests+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/thecrazybob/paytabs-laravel.svg?style=flat-square)](https://packagist.org/packages/thecrazybob/paytabs-laravel)
 
-
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
 ## Installation
@@ -18,13 +17,14 @@ composer require thecrazybob/package-paytabs-laravel-laravel
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --provider="Thecrazybob\PaytabsLaravel\PaytabsLaravelServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="Thecrazybob\PaytabsLaravel\PaytabsServiceProvider" --tag="migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
+
 ```bash
-php artisan vendor:publish --provider="Thecrazybob\PaytabsLaravel\PaytabsLaravelServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Thecrazybob\PaytabsLaravel\PaytabsServiceProvider" --tag="config"
 ```
 
 This is the contents of the published config file:
@@ -36,14 +36,14 @@ return [
 
 ## Usage
 
-``` php
+```php
 $paytabs-laravel = new Thecrazybob\PaytabsLaravel();
 echo $paytabs-laravel->echoPhrase('Hello, Thecrazybob!');
 ```
 
 ## Testing
 
-``` bash
+```bash
 composer test
 ```
 

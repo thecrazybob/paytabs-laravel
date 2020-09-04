@@ -1,10 +1,10 @@
 <?php
 
-namespace Thecrazybob\PaytabsLaravel\Commands;
+namespace Thecrazybob\Paytabs\Commands;
 
 use Illuminate\Console\Command;
 
-class PaytabsLaravelCommand extends Command
+class PaytabsCommand extends Command
 {
     public $signature = 'paytabs-laravel';
 

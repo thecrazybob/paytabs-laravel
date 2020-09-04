@@ -1,59 +1,59 @@
 {
-    "name": "thecrazybob/paytabs-laravel",
-    "description": "PayTabs Gateway for Laravel",
-    "keywords": [
-        "thecrazybob",
-        "paytabs-laravel"
-    ],
-    "homepage": "https://github.com/thecrazybob/paytabs-laravel",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Mohammed Sohail",
-            "email": "hey@thecrazybob.com",
-            "homepage": "https://thecrazybob.com",
-            "role": "Developer"
-        }
-    ],
-    "require": {
-        "php": "^7.4"
-    },
-    "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.16",
-        "orchestra/testbench": "^5.0",
-        "phpunit/phpunit": "^9.3",
-        "psalm/plugin-laravel": "^1.2",
-        "vimeo/psalm": "^3.11"
-    },
-    "autoload": {
-        "psr-4": {
-            "Thecrazybob\\PaytabsLaravel\\": "src"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Thecrazybob\\PaytabsLaravel\\Tests\\": "tests"
-        }
-    },
-    "scripts": {
-        "psalm": "vendor/bin/psalm",
-        "test": "vendor/bin/phpunit",
-        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
-        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Thecrazybob\\PaytabsLaravel\\PaytabsLaravelServiceProvider"
-            ],
-            "aliases": {
-                "PaytabsLaravel": "Thecrazybob\\PaytabsLaravel\\PaytabsLaravelFacade"
-            }
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+  "name": "thecrazybob/paytabs-laravel",
+  "description": "PayTabs Gateway for Laravel",
+  "keywords": [
+    "thecrazybob",
+    "paytabs-laravel"
+  ],
+  "homepage": "https://github.com/thecrazybob/paytabs-laravel",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mohammed Sohail",
+      "email": "hey@thecrazybob.com",
+      "homepage": "https://thecrazybob.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.4"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.16",
+    "orchestra/testbench": "^5.0",
+    "phpunit/phpunit": "^9.3",
+    "psalm/plugin-laravel": "^1.2",
+    "vimeo/psalm": "^3.11"
+  },
+  "autoload": {
+    "psr-4": {
+      "Thecrazybob\\PaytabsLaravel\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Thecrazybob\\PaytabsLaravel\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "psalm": "vendor/bin/psalm",
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+    "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Thecrazybob\\PaytabsLaravel\\PaytabsServiceProvider"
+      ],
+      "aliases": {
+        "Paytabs": "Thecrazybob\\PaytabsLaravel\\PaytabsFacade"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
