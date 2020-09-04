@@ -1,6 +1,6 @@
 <?php
 
-namespace Thecrazybob\Paytabs\Tests;
+namespace Thecrazybob\PaytabsLaravel\Tests;
 
 class ExampleTest extends TestCase
 {

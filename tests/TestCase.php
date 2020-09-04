@@ -1,9 +1,9 @@
 <?php
 
-namespace Thecrazybob\Paytabs\Tests;
+namespace Thecrazybob\PaytabsLaravel\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use Thecrazybob\Paytabs\PaytabsServiceProvider;
+use Thecrazybob\PaytabsLaravel\PaytabsServiceProvider;
 
 class TestCase extends Orchestra
 {
