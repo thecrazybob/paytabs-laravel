@@ -15,7 +15,7 @@ class PaytabsLaravel
 
         // Gateway Customization Parameters
         $showBilling = config('paytabs-laravel.show_billing');
-        $showHeader =  config('paytabs-laravel.show_header');
+        $showHeader = config('paytabs-laravel.show_header');
         $uiType = config('paytabs-laravel.ui_type');
         $color = config('paytabs-laravel.color');
         $imgHeight = config('paytabs-laravel.img_height');
