@@ -1,6 +1,6 @@
 <?php
 
-namespace Thecrazybob\Paytabs\Commands;
+namespace Thecrazybob\PaytabsLaravel\Commands;
 
 use Illuminate\Console\Command;
 

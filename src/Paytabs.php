@@ -1,6 +1,6 @@
 <?php
 
-namespace Thecrazybob\Paytabs;
+namespace Thecrazybob\PaytabsLaravel;
 
 class Paytabs
 {
@@ -30,16 +30,16 @@ class Paytabs
         $currencyCode = $order_details['currency_code'];
 
         // Client Parameters
-        $clientId = $customer_details['id'];
-        $firstname = $customer_details['first_name'];
-        $lastname = $customer_details['last_name'];
+        // $clientId = $customer_details['id'];
+        // $firstname = $customer_details['first_name'];
+        // $lastname = $customer_details['last_name'];
         $email = $customer_details['email'];
         $address1 = $customer_details['address1'];
         $address2 = $customer_details['address2'];
         $city = $customer_details['city'];
         $state = $customer_details['state'];
         $postcode = $customer_details['postcode'];
-        $country = $customer_details['country'];
+        // $country = $customer_details['country'];
         $phone = $customer_details['phonenumber'];
         $phone_country_code = $customer_details['phonecc'];
 

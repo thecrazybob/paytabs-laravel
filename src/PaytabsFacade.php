@@ -1,6 +1,6 @@
 <?php
 
-namespace Thecrazybob\Paytabs;
+namespace Thecrazybob\PaytabsLaravel;
 
 use Illuminate\Support\Facades\Facade;
 
