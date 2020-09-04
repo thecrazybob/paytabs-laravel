@@ -3,7 +3,7 @@
 namespace Thecrazybob\PaytabsLaravel;
 
 use Illuminate\Support\ServiceProvider;
-use Thecrazybob\Paytabs\Commands\PaytabsCommand;
+use Thecrazybob\PaytabsLaravel\Commands\PaytabsCommand;
 
 class PaytabsServiceProvider extends ServiceProvider
 {
