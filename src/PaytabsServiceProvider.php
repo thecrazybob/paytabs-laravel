@@ -4,6 +4,7 @@ namespace Thecrazybob\PaytabsLaravel;
 
 use Illuminate\Support\ServiceProvider;
 use Thecrazybob\PaytabsLaravel\Commands\PaytabsCommand;
+use Thecrazybob\PaytabsLaravel\Paytabs;
 
 class PaytabsServiceProvider extends ServiceProvider
 {
@@ -19,7 +20,7 @@ class PaytabsServiceProvider extends ServiceProvider
             ], 'views');
 
             $migrationFileName = 'create_paytabs_laravel_table.php';
-            if (! $this->migrationFileExists($migrationFileName)) {
+            if (!$this->migrationFileExists($migrationFileName)) {
                 $this->publishes([
                     __DIR__ . "/../database/migrations/{$migrationFileName}.stub" => database_path('migrations/' . date('Y_m_d_His', time()) . '_' . $migrationFileName),
                 ], 'migrations');
