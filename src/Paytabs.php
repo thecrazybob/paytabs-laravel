@@ -7,21 +7,21 @@ class Paytabs
     public function createPayment(array $order_details, array $customer_details)
     {
         // Gateway Configuration Parameters
-        $merchantId = config('paytabs-laravel.merchant_id');
-        $secretKey = config('paytabs-laravel.merchant_secret_key');
-        $callbackUrl = config('paytabs-laravel.callback_url');
-        $cancelUrl = config('paytabs-laravel.cancel_url');
-        $tokenization = config('paytabs-laravel.enable_tokenization');
+        $merchantId = config('paytabs.merchant_id');
+        $secretKey = config('paytabs.merchant_secret_key');
+        $callbackUrl = config('paytabs.callback_url');
+        $cancelUrl = config('paytabs.cancel_url');
+        $tokenization = config('paytabs.enable_tokenization');
 
         // Gateway Customization Parameters
-        $showBilling = config('paytabs-laravel.show_billing');
-        $showHeader = config('paytabs-laravel.show_header');
-        $uiType = config('paytabs-laravel.ui_type');
-        $color = config('paytabs-laravel.color');
-        $imgHeight = config('paytabs-laravel.img_height');
-        $imgWidth = config('paytabs-laravel.img_width');
-        $imgUrl = config('paytabs-laravel.img_url');
-        $customCss = config('paytabs-laravel.custom_css');
+        $showBilling = config('paytabs.show_billing');
+        $showHeader = config('paytabs.show_header');
+        $uiType = config('paytabs.ui_type');
+        $color = config('paytabs.color');
+        $imgHeight = config('paytabs.img_height');
+        $imgWidth = config('paytabs.img_width');
+        $imgUrl = config('paytabs.img_url');
+        $customCss = config('paytabs.custom_css');
 
         // Order Parameters
         $orderId = $order_details['id'];
