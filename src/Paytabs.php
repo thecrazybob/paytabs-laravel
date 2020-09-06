@@ -72,7 +72,7 @@ class Paytabs
             'is-tokenization' => $tokenization,
             'ui-type' => $uiType,
             'color' => $color,
-            'ui-element-id' => 'frmRemoteCardProcess',
+            // 'ui-element-id' => 'frmRemoteCardProcess',
             'ui-show-billing-address' => $showBilling,
             'ui-show-header' => $showHeader,
             'checkout-button-width' => $imgWidth,
