@@ -25,6 +25,9 @@ return [
     // Checkout Type (Button/Iframe)
     'ui_type' => '',
 
+    // UI Element ID
+    'element_id' => '',
+
     // Theme Colour
     'color' => '',
 

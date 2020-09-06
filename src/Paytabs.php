@@ -22,6 +22,7 @@ class Paytabs
         $imgWidth = config('paytabs.img_width');
         $imgUrl = config('paytabs.img_url');
         $customCss = config('paytabs.custom_css');
+        $elementId = config('paytabs.element_id');
 
         // Order Parameters
         $orderId = $order_details['id'];
@@ -72,7 +73,7 @@ class Paytabs
             'is-tokenization' => $tokenization,
             'ui-type' => $uiType,
             'color' => $color,
-            // 'ui-element-id' => 'frmRemoteCardProcess',
+            'ui-element-id' => $elementId,
             'ui-show-billing-address' => $showBilling,
             'ui-show-header' => $showHeader,
             'checkout-button-width' => $imgWidth,
