@@ -18,16 +18,17 @@ class PaytabsServiceProvider extends ServiceProvider
                 __DIR__ . '/../resources/views' => base_path('resources/views/vendor/paytabs'),
             ], 'views');
 
-            $migrationFileName = 'create_paytabs_laravel_table.php';
-            if (! $this->migrationFileExists($migrationFileName)) {
-                $this->publishes([
-                    __DIR__ . "/../database/migrations/{$migrationFileName}.stub" => database_path('migrations/' . date('Y_m_d_His', time()) . '_' . $migrationFileName),
-                ], 'migrations');
-            }
+            // Uncomment when Migration and Command are in use
+            // $migrationFileName = 'create_paytabs_laravel_table.php';
+            // if (!$this->migrationFileExists($migrationFileName)) {
+            //     $this->publishes([
+            //         __DIR__ . "/../database/migrations/{$migrationFileName}.stub" => database_path('migrations/' . date('Y_m_d_His', time()) . '_' . $migrationFileName),
+            //     ], 'migrations');
+            // }
 
-            $this->commands([
-                PaytabsCommand::class,
-            ]);
+            // $this->commands([
+            //     PaytabsCommand::class,
+            // ]);
         }
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'paytabs');
